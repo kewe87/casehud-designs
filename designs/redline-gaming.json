@@ -1,0 +1,51 @@
+{
+  "name": "Redline Gaming",
+  "round": true,
+  "set": "clean",
+  "width": 480,
+  "height": 480,
+  "interval_ms": 1000,
+  "history_size": 90,
+  "background": "#000000",
+  "panel": "",
+  "foreground": "#f1f4fa",
+  "muted": "#8a94a8",
+  "accent": "#f87171",
+  "widgets": [
+    {
+      "type": "gauge",
+      "x": 10,
+      "y": 10,
+      "w": 460,
+      "h": 460,
+      "source": "FPS/Framerate",
+      "max": 144,
+      "warn": 60,
+      "crit": 30,
+      "invert": true,
+      "color": "#fca5a5",
+      "thickness": 0.055,
+      "glow": true,
+      "smooth": true,
+      "ring_only": true
+    },
+    {
+      "type": "value",
+      "x": 90,
+      "y": 100,
+      "w": 300,
+      "h": 280,
+      "label": "FPS",
+      "source": "FPS/Framerate",
+      "unit": "none",
+      "warn": 60,
+      "crit": 30,
+      "invert": true,
+      "color": "#fca5a5",
+      "smooth": true,
+      "align": "center",
+      "sub_source": "FPS/Latency|FPS/Frametime",
+      "sub_unit": " ms"
+    }
+  ]
+}

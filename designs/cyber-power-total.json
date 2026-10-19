@@ -1,0 +1,57 @@
+{
+  "name": "System power",
+  "round": true,
+  "set": "cyberpunk",
+  "width": 480,
+  "height": 480,
+  "interval_ms": 1000,
+  "history_size": 90,
+  "background": "#050508",
+  "panel": "",
+  "foreground": "#fcee0a",
+  "muted": "#9a9645",
+  "accent": "#00f0ff",
+  "widgets": [
+    {
+      "type": "gauge",
+      "x": 21,
+      "y": 15,
+      "w": 444,
+      "h": 444,
+      "source": "Powers/CPU Package|Powers/Package + Powers/GPU Package|Powers/GPU Power|Powers/GPU Core",
+      "max": 700,
+      "color": "#5c0016",
+      "thickness": 0.04,
+      "ring_only": true,
+      "segments": 48
+    },
+    {
+      "type": "gauge",
+      "x": 18,
+      "y": 18,
+      "w": 444,
+      "h": 444,
+      "source": "Powers/CPU Package|Powers/Package + Powers/GPU Package|Powers/GPU Power|Powers/GPU Core",
+      "max": 700,
+      "color": "#fcee0a",
+      "thickness": 0.04,
+      "ring_only": true,
+      "segments": 48,
+      "ticks": 24
+    },
+    {
+      "type": "value",
+      "x": 100,
+      "y": 120,
+      "w": 280,
+      "h": 260,
+      "label": "SYSTEM",
+      "source": "Powers/CPU Package|Powers/Package + Powers/GPU Package|Powers/GPU Power|Powers/GPU Core",
+      "unit": "W",
+      "max": 700,
+      "color": "#fcee0a",
+      "tint": true,
+      "align": "center"
+    }
+  ]
+}

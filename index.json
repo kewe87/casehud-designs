@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "designs": [
+    {"id": "sunset-cpu-gpu", "name": "Sunset CPU + GPU", "author": "kewe87", "description": "Orange and pink load rings with temperatures.", "round": true, "file": "designs/sunset-cpu-gpu.json"},
+    {"id": "phosphor-minimal", "name": "Phosphor Minimal", "author": "kewe87", "description": "Two big green numbers, nothing else.", "round": true, "file": "designs/phosphor-minimal.json"},
+    {"id": "ice-loop", "name": "Ice Loop", "author": "kewe87", "description": "Coolant temperature as a pale blue ring.", "round": true, "file": "designs/ice-loop.json"},
+    {"id": "redline-gaming", "name": "Redline Gaming", "author": "kewe87", "description": "FPS and frametime in red.", "round": true, "file": "designs/redline-gaming.json"},
+    {"id": "violet-dashboard", "name": "Violet Dashboard", "author": "kewe87", "description": "Square 6-widget dashboard for non-round screens.", "round": false, "file": "designs/violet-dashboard.json"},
+    {"id": "neon-clock", "name": "Neon Clock", "author": "kewe87", "description": "Glowing seconds ring around white digits.", "round": true, "file": "designs/neon-clock.json"},
+    {"id": "retro-cpu-gpu", "name": "Retro CPU + GPU", "author": "kewe87", "description": "Amber CRT look.", "round": true, "file": "designs/retro-cpu-gpu.json"},
+    {"id": "cyber-power-total", "name": "Cyber System Power", "author": "kewe87", "description": "Total system power, cyberpunk style.", "round": true, "file": "designs/cyber-power-total.json"}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "CPU + GPU",
+  "round": true,
+  "set": "retro",
+  "scanlines": true,
+  "width": 480,
+  "height": 480,
+  "interval_ms": 1000,
+  "history_size": 90,
+  "background": "#0b0700",
+  "panel": "",
+  "foreground": "#ffb000",
+  "muted": "#8a5a00",
+  "accent": "#ffb000",
+  "widgets": [
+    {
+      "type": "value",
+      "x": 80,
+      "y": 56,
+      "w": 320,
+      "h": 180,
+      "label": "CPU",
+      "source": "Temperatures/CPU Package|Temperatures/Core (Tctl/Tdie)|Temperatures/Core (Tctl)",
+      "unit": "°",
+      "warn": 85,
+      "crit": 95,
+      "color": "#ffb000",
+      "tint": true,
+      "align": "center"
+    },
+    {
+      "type": "value",
+      "x": 80,
+      "y": 244,
+      "w": 320,
+      "h": 180,
+      "label": "GPU",
+      "source": "Temperatures/GPU Core|Temperatures/GPU Package",
+      "unit": "°",
+      "warn": 80,
+      "crit": 88,
+      "color": "#ffb000",
+      "tint": true,
+      "align": "center"
+    }
+  ]
+}

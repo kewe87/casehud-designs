@@ -1,0 +1,43 @@
+{
+  "name": "Phosphor Minimal",
+  "round": true,
+  "set": "clean",
+  "width": 480,
+  "height": 480,
+  "interval_ms": 1000,
+  "history_size": 90,
+  "background": "#000000",
+  "panel": "",
+  "foreground": "#f1f4fa",
+  "muted": "#8a94a8",
+  "accent": "#4ade80",
+  "widgets": [
+    {
+      "type": "gauge",
+      "x": 10,
+      "y": 10,
+      "w": 460,
+      "h": 460,
+      "source": "Temperatures/CPU Package|Temperatures/Core (Tctl/Tdie)|Temperatures/Core (Tctl)",
+      "min": 30,
+      "max": 95,
+      "warn": 85,
+      "crit": 95,
+      "color": "#f1f4fa",
+      "thickness": 0.02,
+      "ring_only": true
+    },
+    {
+      "type": "value",
+      "x": 90,
+      "y": 130,
+      "w": 300,
+      "h": 220,
+      "label": "CPU",
+      "source": "Temperatures/CPU Package|Temperatures/Core (Tctl/Tdie)|Temperatures/Core (Tctl)",
+      "unit": "°",
+      "color": "#8a94a8",
+      "align": "center"
+    }
+  ]
+}
