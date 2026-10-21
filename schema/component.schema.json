@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "title": "CaseHUD library: hardware component",
+  "description": "Coordinates are millimetres. Origin = top-left corner of the part's front view, x to the right, y down. See docs/components.md.",
+  "type": "object",
+  "required": ["format", "id", "vendor", "model", "category", "dimensions_mm", "outline", "verified_by", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "format": {"const": 1},
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "vendor": {"type": "string", "minLength": 1, "maxLength": 80},
+    "model": {"type": "string", "minLength": 1, "maxLength": 160},
+    "part_numbers": {"type": "array", "items": {"type": "string", "maxLength": 64}, "maxItems": 32},
+    "category": {"enum": ["fan", "fan-lcd", "ram", "gpu-block", "cpu-block", "distro-plate", "pump", "reservoir", "strip", "display", "controller", "mainboard", "case-accessory"]},
+    "dimensions_mm": {
+      "type": "object", "required": ["w", "h", "d"], "additionalProperties": false,
+      "properties": {
+        "w": {"$ref": "common.schema.json#/$defs/size"},
+        "h": {"$ref": "common.schema.json#/$defs/size"},
+        "d": {"$ref": "common.schema.json#/$defs/size"},
+        "approximate": {"type": "boolean"}
+      }
+    },
+    "outline": {
+      "type": "object", "required": ["front"], "additionalProperties": false,
+      "properties": {
+        "front": {"$ref": "common.schema.json#/$defs/shapes"},
+        "side": {"$ref": "common.schema.json#/$defs/shapes"},
+        "approximate": {"type": "boolean"}
+      }
+    },
+    "leds": {
+      "type": "object", "required": ["count", "positions_mm"], "additionalProperties": false,
+      "properties": {
+        "count": {"type": "integer", "minimum": 0, "maximum": 2000},
+        "positions_mm": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/point"}, "maxItems": 2000,
+          "description": "Front-view positions in the order the device addresses the LEDs (index 0 = first LED)."},
+        "direction": {"$ref": "common.schema.json#/$defs/text"},
+        "zones": {
+          "type": "array", "maxItems": 32,
+          "items": {
+            "type": "object", "required": ["id", "first", "count"], "additionalProperties": false,
+            "properties": {
+              "id": {"$ref": "common.schema.json#/$defs/id"},
+              "name": {"type": "string", "maxLength": 80},
+              "first": {"type": "integer", "minimum": 0},
+              "count": {"type": "integer", "minimum": 1},
+              "direction": {"$ref": "common.schema.json#/$defs/text"}
+            }
+          }
+        },
+        "approximate": {"type": "boolean", "description": "true = positions are derived from photos/dimensions, not published."},
+        "measured_count": {"type": "integer", "minimum": 0, "description": "Count measured on the owner's hardware, only if it differs from the manufacturer count."},
+        "manufacturer_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "connection": {
+      "type": "object", "required": ["type"], "additionalProperties": false,
+      "properties": {
+        "type": {"enum": ["argb-header", "usb-controller", "smbus", "proprietary", "none"]},
+        "notes": {"$ref": "common.schema.json#/$defs/text"}
+      }
+    },
+    "usb": {
+      "type": "object", "required": ["vid", "pid"], "additionalProperties": false,
+      "properties": {"vid": {"type": "string", "pattern": "^[0-9a-f]{4}$"}, "pid": {"type": "string", "pattern": "^[0-9a-f]{4}$"}}
+    },
+    "display": {
+      "type": "object", "required": ["width_px", "height_px"], "additionalProperties": false,
+      "properties": {
+        "width_px": {"type": "integer", "minimum": 1}, "height_px": {"type": "integer", "minimum": 1},
+        "area_mm": {"type": "object", "required": ["x", "y", "w", "h"], "additionalProperties": false,
+          "properties": {"x": {"type": "number"}, "y": {"type": "number"}, "w": {"type": "number"}, "h": {"type": "number"}}}
+      }
+    },
+    "sources": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/source"}, "maxItems": 32},
+    "verified_by": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/verified_by"}, "minItems": 1, "uniqueItems": true},
+    "notes": {"$ref": "common.schema.json#/$defs/text"},
+    "author": {"type": "string", "maxLength": 64}
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/common.schema.json",
+  "title": "CaseHUD library: shared definitions",
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"},
+    "mm": {"type": "number", "minimum": -2000, "maximum": 2000},
+    "size": {"type": "number", "exclusiveMinimum": 0, "maximum": 2000},
+    "point": {"type": "array", "items": {"$ref": "#/$defs/mm"}, "minItems": 2, "maxItems": 2},
+    "role": {"enum": ["body", "frame", "glass", "display", "lit", "cutout", "label", "zone"]},
+    "shape": {
+      "oneOf": [
+        {"type": "object", "required": ["type", "x", "y", "w", "h"], "additionalProperties": false,
+         "properties": {"type": {"const": "rect"}, "x": {"$ref": "#/$defs/mm"}, "y": {"$ref": "#/$defs/mm"},
+           "w": {"$ref": "#/$defs/size"}, "h": {"$ref": "#/$defs/size"}, "r": {"type": "number", "minimum": 0, "maximum": 1000},
+           "role": {"$ref": "#/$defs/role"}, "label": {"type": "string", "maxLength": 80}}},
+        {"type": "object", "required": ["type", "cx", "cy", "r"], "additionalProperties": false,
+         "properties": {"type": {"const": "circle"}, "cx": {"$ref": "#/$defs/mm"}, "cy": {"$ref": "#/$defs/mm"},
+           "r": {"$ref": "#/$defs/size"}, "role": {"$ref": "#/$defs/role"}, "label": {"type": "string", "maxLength": 80}}},
+        {"type": "object", "required": ["type", "cx", "cy", "r_outer", "r_inner"], "additionalProperties": false,
+         "properties": {"type": {"const": "ring"}, "cx": {"$ref": "#/$defs/mm"}, "cy": {"$ref": "#/$defs/mm"},
+           "r_outer": {"$ref": "#/$defs/size"}, "r_inner": {"type": "number", "minimum": 0, "maximum": 2000},
+           "role": {"$ref": "#/$defs/role"}, "label": {"type": "string", "maxLength": 80}}},
+        {"type": "object", "required": ["type", "points"], "additionalProperties": false,
+         "properties": {"type": {"const": "polygon"}, "points": {"type": "array", "items": {"$ref": "#/$defs/point"}, "minItems": 3, "maxItems": 256},
+           "role": {"$ref": "#/$defs/role"}, "label": {"type": "string", "maxLength": 80}}}
+      ]
+    },
+    "shapes": {"type": "array", "items": {"$ref": "#/$defs/shape"}, "maxItems": 256},
+    "source": {
+      "type": "object", "required": ["url"], "additionalProperties": false,
+      "properties": {"url": {"type": "string", "pattern": "^https://"}, "note": {"type": "string", "maxLength": 300}}
+    },
+    "verified_by": {"enum": ["measured", "manufacturer", "community"]},
+    "text": {"type": "string", "maxLength": 2000}
+  }
+}

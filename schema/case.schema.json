@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/case.schema.json",
+  "title": "CaseHUD library: PC case template",
+  "description": "Coordinates are millimetres, origin = top-left of each view, x right, y down. See docs/components.md.",
+  "type": "object",
+  "required": ["format", "id", "vendor", "model", "dimensions_mm", "views", "verified_by", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "format": {"const": 1},
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "vendor": {"type": "string", "minLength": 1, "maxLength": 80},
+    "model": {"type": "string", "minLength": 1, "maxLength": 160},
+    "part_numbers": {"type": "array", "items": {"type": "string", "maxLength": 64}, "maxItems": 32},
+    "dimensions_mm": {
+      "type": "object", "required": ["w", "h", "d"], "additionalProperties": false,
+      "properties": {"w": {"$ref": "common.schema.json#/$defs/size"}, "h": {"$ref": "common.schema.json#/$defs/size"},
+        "d": {"$ref": "common.schema.json#/$defs/size"}, "approximate": {"type": "boolean"}}
+    },
+    "views": {
+      "type": "object", "minProperties": 1, "additionalProperties": false,
+      "properties": {"front": {"$ref": "#/$defs/view"}, "side": {"$ref": "#/$defs/view"}}
+    },
+    "mounts": {"type": "array", "items": {"$ref": "#/$defs/mount"}, "maxItems": 64},
+    "areas": {
+      "type": "array", "maxItems": 32,
+      "items": {
+        "type": "object", "required": ["id", "kind", "view", "shape"], "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "common.schema.json#/$defs/id"},
+          "kind": {"enum": ["motherboard", "psu", "psu-shroud", "drive", "gpu-bay", "cable-area", "chamber"]},
+          "name": {"type": "string", "maxLength": 80},
+          "view": {"enum": ["front", "side"]},
+          "shape": {"$ref": "common.schema.json#/$defs/shape"},
+          "notes": {"$ref": "common.schema.json#/$defs/text"}
+        }
+      }
+    },
+    "approximate": {"type": "boolean", "description": "true = the geometry (views, mounts, areas) is estimated, only dimensions_mm are published."},
+    "sources": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/source"}, "maxItems": 32},
+    "verified_by": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/verified_by"}, "minItems": 1, "uniqueItems": true},
+    "notes": {"$ref": "common.schema.json#/$defs/text"},
+    "author": {"type": "string", "maxLength": 64}
+  },
+  "$defs": {
+    "view": {
+      "type": "object", "required": ["size_mm", "outline"], "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string", "maxLength": 80},
+        "size_mm": {"type": "object", "required": ["w", "h"], "additionalProperties": false,
+          "properties": {"w": {"$ref": "common.schema.json#/$defs/size"}, "h": {"$ref": "common.schema.json#/$defs/size"}}},
+        "outline": {"$ref": "common.schema.json#/$defs/shapes"}
+      }
+    },
+    "mount": {
+      "type": "object", "required": ["id", "face", "view", "region", "layouts"], "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "common.schema.json#/$defs/id"},
+        "face": {"enum": ["top", "bottom", "front", "rear", "side", "other"]},
+        "view": {"enum": ["front", "side"], "description": "View in which region and snap points are given."},
+        "region": {"$ref": "common.schema.json#/$defs/shape"},
+        "layouts": {
+          "type": "array", "minItems": 1, "maxItems": 8,
+          "items": {
+            "type": "object", "required": ["fan_mm", "count", "snap_mm"], "additionalProperties": false,
+            "properties": {
+              "fan_mm": {"enum": [40, 60, 80, 92, 120, 140, 200]},
+              "count": {"type": "integer", "minimum": 1, "maximum": 8},
+              "snap_mm": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/point"},
+                "description": "Fan centres in the view, in mounting order (rear to front, top to bottom)."}
+            }
+          }
+        },
+        "radiator_mm": {"type": "array", "items": {"type": "integer"}, "maxItems": 6},
+        "max_thickness_mm": {"type": "number", "exclusiveMinimum": 0},
+        "slots": {"type": "boolean", "description": "true = slotted holes, fans can slide along the mount."},
+        "notes": {"$ref": "common.schema.json#/$defs/text"}
+      }
+    }
+  }
+}
