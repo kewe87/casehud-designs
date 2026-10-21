@@ -1,0 +1,157 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "core-distro-plate-o11-dynamic-evo-xl",
+  "vendor": "Alphacool",
+  "model": "Core Distro Plate O11 Dynamic EVO/XL with Apex VPP pump (ARGB)",
+  "part_numbers": [
+    "13743"
+  ],
+  "category": "distro-plate",
+  "dimensions_mm": {
+    "w": 360,
+    "h": 141,
+    "d": 41.3
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 360,
+        "h": 141,
+        "r": 8,
+        "role": "body"
+      },
+      {
+        "type": "rect",
+        "x": 12,
+        "y": 12,
+        "w": 336,
+        "h": 117,
+        "r": 6,
+        "role": "cutout"
+      },
+      {
+        "type": "circle",
+        "cx": 300,
+        "cy": 70.5,
+        "r": 36,
+        "role": "zone"
+      }
+    ],
+    "side": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 360,
+        "h": 77.8,
+        "r": 3,
+        "role": "body"
+      }
+    ],
+    "approximate": true
+  },
+  "leds": {
+    "count": 18,
+    "positions_mm": [
+      [
+        30.0,
+        128.0
+      ],
+      [
+        47.6,
+        128.0
+      ],
+      [
+        65.3,
+        128.0
+      ],
+      [
+        82.9,
+        128.0
+      ],
+      [
+        100.6,
+        128.0
+      ],
+      [
+        118.2,
+        128.0
+      ],
+      [
+        135.9,
+        128.0
+      ],
+      [
+        153.5,
+        128.0
+      ],
+      [
+        171.2,
+        128.0
+      ],
+      [
+        188.8,
+        128.0
+      ],
+      [
+        206.5,
+        128.0
+      ],
+      [
+        224.1,
+        128.0
+      ],
+      [
+        241.8,
+        128.0
+      ],
+      [
+        259.4,
+        128.0
+      ],
+      [
+        277.1,
+        128.0
+      ],
+      [
+        294.7,
+        128.0
+      ],
+      [
+        312.4,
+        128.0
+      ],
+      [
+        330.0,
+        128.0
+      ]
+    ],
+    "direction": "Order along the plate is not documented. Placeholder: left to right along the lower edge.",
+    "approximate": true,
+    "manufacturer_count": 18,
+    "measured_count": 20
+  },
+  "connection": {
+    "type": "argb-header",
+    "notes": "3-pin 5 V ARGB, in the owner's build daisy-chained through a splitter on the mainboard header argb3."
+  },
+  "sources": [
+    {
+      "url": "https://www.titanrig.com/alphacool-core-distro-plate-o11-dynamic-evoxl-with-apex-vpp-pump.html",
+      "note": "360 x 141 mm, 18 digital ARGB LEDs, ~200 ml, 9 x G1/4 + fill + drain"
+    },
+    {
+      "url": "https://www.watercoolinguk.co.uk/product/alphacool-core-distro-plate-o11-dynamic-evo-xl-with-apex-vpp-pump/",
+      "note": "360 x 141 x 77.8 mm with pump and mount, 41.3 mm without"
+    }
+  ],
+  "verified_by": [
+    "manufacturer",
+    "measured"
+  ],
+  "notes": "Manufacturer: 18 LEDs. The owner's measurement on a shared splitter channel gave 20, which is imprecise (sum of three devices on one channel), so the manufacturer count is used. Depth 41.3 mm is without pump and mount; 77.8 mm with pump (side outline). LED positions are NOT published and are a placeholder."
+}

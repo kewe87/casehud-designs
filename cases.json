@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "cases": [
+    {"id": "o11-dynamic-evo", "vendor": "Lian Li", "model": "O11 Dynamic EVO", "verified_by": ["manufacturer"], "file": "cases/lian-li/o11-dynamic-evo.json"}
+  ]
+}

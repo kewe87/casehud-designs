@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "uni-fan-tl-controller",
+  "vendor": "Lian Li",
+  "model": "UNI FAN TL Controller (2nd generation)",
+  "part_numbers": [],
+  "category": "controller",
+  "dimensions_mm": {
+    "w": 80,
+    "h": 50,
+    "d": 16,
+    "approximate": true
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 50,
+        "r": 4,
+        "role": "body"
+      }
+    ],
+    "approximate": true
+  },
+  "connection": {
+    "type": "usb-controller",
+    "notes": "Needs a PCIe/SATA power cable, a USB cable to a motherboard 9-pin USB header and optionally a 5 V ARGB + 4-pin PWM cable for motherboard sync. Up to 3 TL LCD fans per cable/port; max. 7 TL LCD fans per controller (16 TL + TL LCD in total); 8 to 12 TL LCD fans need two controllers. TL LCD fans only work on ports 2, 3 and 4."
+  },
+  "usb": {
+    "vid": "0416",
+    "pid": "7372"
+  },
+  "sources": [
+    {
+      "url": "https://lian-li.com/product/uni-fan-tl-lcd/",
+      "note": "controller requirements and port rules"
+    },
+    {
+      "url": "https://www.pbtech.co.nz/product/FANLAN0059/Lian-Li-UNI-FAN-Controller-for-TL-Series-Black",
+      "note": "retailer listing, no dimensions"
+    }
+  ],
+  "verified_by": [
+    "manufacturer"
+  ],
+  "notes": "The physical size and the exact port count and positions of the 2nd generation controller are NOT published in the sources found: 80 x 50 x 16 mm is a placeholder (approximate). USB IDs are those used by the LED tool. Please measure and replace."
+}

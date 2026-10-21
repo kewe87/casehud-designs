@@ -1,0 +1,113 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "apex-1-cpu-block-am5-argb",
+  "vendor": "Alphacool",
+  "model": "Apex 1 CPU Cooler AM5 (ARGB)",
+  "part_numbers": [
+    "13893"
+  ],
+  "category": "cpu-block",
+  "dimensions_mm": {
+    "w": 100,
+    "h": 86,
+    "d": 32.3
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 86,
+        "r": 6,
+        "role": "body"
+      },
+      {
+        "type": "rect",
+        "x": 10,
+        "y": 10,
+        "w": 62,
+        "h": 66,
+        "r": 4,
+        "role": "lit"
+      },
+      {
+        "type": "rect",
+        "x": 78,
+        "y": 10,
+        "w": 14,
+        "h": 66,
+        "r": 3,
+        "role": "lit"
+      }
+    ],
+    "side": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 32.3,
+        "r": 2,
+        "role": "body"
+      }
+    ],
+    "approximate": true
+  },
+  "leds": {
+    "count": 8,
+    "positions_mm": [
+      [
+        20,
+        20
+      ],
+      [
+        41,
+        20
+      ],
+      [
+        62,
+        20
+      ],
+      [
+        20,
+        56
+      ],
+      [
+        41,
+        56
+      ],
+      [
+        62,
+        56
+      ],
+      [
+        85,
+        28
+      ],
+      [
+        85,
+        58
+      ]
+    ],
+    "direction": "Placeholder order. The block lights through fine design elements on top plus a separate light element on the right that shines towards the RAM slots.",
+    "approximate": true
+  },
+  "connection": {
+    "type": "argb-header",
+    "notes": "3-pin 5 V ARGB, in the owner's build daisy-chained via a splitter on the mainboard header argb3."
+  },
+  "sources": [
+    {
+      "url": "https://shop.alphacool.com/shop/cpu-water-cooling/amd/13893-alphacool-apex-1-cpu-cooler-am5",
+      "note": "100 x 86 x 32.3 mm, 2 x G1/4, ARGB through design elements on top, separate light element on the right"
+    }
+  ],
+  "verified_by": [
+    "manufacturer",
+    "measured"
+  ],
+  "notes": "The product page does not state the LED count; 8 LEDs are measured on the owner's block. Positions are a placeholder. Orientation of the right light element depends on the mounting rotation."
+}

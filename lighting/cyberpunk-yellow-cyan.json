@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "cyberpunk-yellow-cyan",
+  "name": {
+    "de": "Cyberpunk Gelb/Cyan",
+    "en": "Cyberpunk yellow/cyan"
+  },
+  "description": {
+    "de": "Gelb und Cyan im Wechsel, nach dem Cyberpunk-Design-Set.",
+    "en": "Alternating yellow and cyan stripes, from the Cyberpunk design set."
+  },
+  "effect": "stripes",
+  "params": {
+    "color1": "#fcee0a",
+    "color2": "#00f0ff",
+    "count": 8,
+    "speed": 30
+  },
+  "path": {
+    "mode": "around"
+  },
+  "palette": [
+    "#fcee0a",
+    "#00f0ff",
+    "#ff003c"
+  ],
+  "tags": [
+    "cyberpunk",
+    "party"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

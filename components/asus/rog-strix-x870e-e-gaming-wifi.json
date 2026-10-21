@@ -1,0 +1,124 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "rog-strix-x870e-e-gaming-wifi",
+  "vendor": "ASUS",
+  "model": "ROG STRIX X870E-E GAMING WIFI",
+  "part_numbers": [],
+  "category": "mainboard",
+  "dimensions_mm": {
+    "w": 244,
+    "h": 305,
+    "d": 60
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 244,
+        "h": 305,
+        "r": 0,
+        "role": "body"
+      },
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 100,
+        "r": 4,
+        "role": "frame",
+        "label": "I/O cover"
+      },
+      {
+        "type": "rect",
+        "x": 150,
+        "y": 60,
+        "w": 70,
+        "h": 38,
+        "r": 2,
+        "role": "zone",
+        "label": "DIMM slots"
+      },
+      {
+        "type": "rect",
+        "x": 8,
+        "y": 120,
+        "w": 228,
+        "h": 18,
+        "r": 2,
+        "role": "zone",
+        "label": "PCIe x16"
+      }
+    ],
+    "approximate": true
+  },
+  "leds": {
+    "count": 9,
+    "positions_mm": [
+      [
+        100.0,
+        10.0
+      ],
+      [
+        100.0,
+        20.0
+      ],
+      [
+        100.0,
+        30.0
+      ],
+      [
+        100.0,
+        40.0
+      ],
+      [
+        100.0,
+        50.0
+      ],
+      [
+        100.0,
+        60.0
+      ],
+      [
+        100.0,
+        70.0
+      ],
+      [
+        100.0,
+        80.0
+      ],
+      [
+        100.0,
+        90.0
+      ]
+    ],
+    "direction": "Measured: the I/O cover is one channel of 9 LEDs (device channel ch4). Positions along the cover are a placeholder.",
+    "approximate": true,
+    "zones": [
+      {
+        "id": "io-cover",
+        "name": "I/O cover",
+        "first": 0,
+        "count": 9
+      }
+    ]
+  },
+  "connection": {
+    "type": "argb-header",
+    "notes": "Manufacturer: 3 addressable Gen 2 headers (5 V ARGB). The board is drawn in the usual case orientation: I/O at the left, expansion slots stacked vertically (w = 244 mm, h = 305 mm)."
+  },
+  "sources": [
+    {
+      "url": "https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi/spec/",
+      "note": "ATX 305 x 244 mm, 3 addressable Gen 2 headers, Aura Sync"
+    }
+  ],
+  "verified_by": [
+    "measured",
+    "manufacturer"
+  ],
+  "notes": "The 9 I/O cover LEDs are measured on the owner's board. ASUS does not publish the lighting zones. Headers connected on the owner's build (not part of the board): argb1 78, argb2 47, argb3 18+, plus one 12 V header, see the owner's LED config. The board shows only the outline of the main features; depth (60 mm) includes the I/O cover and heat sinks and is approximate."
+}

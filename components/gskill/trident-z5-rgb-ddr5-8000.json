@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "trident-z5-rgb-ddr5-8000",
+  "vendor": "G.Skill",
+  "model": "Trident Z5 RGB DDR5-8000 CL40 (2 x 24 GB)",
+  "part_numbers": [
+    "F5-8000J4048G24G"
+  ],
+  "category": "ram",
+  "dimensions_mm": {
+    "w": 133.3,
+    "h": 43,
+    "d": 8.4
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 133.3,
+        "h": 43,
+        "r": 2,
+        "role": "body"
+      },
+      {
+        "type": "rect",
+        "x": 6,
+        "y": 3,
+        "w": 121.3,
+        "h": 10,
+        "r": 2,
+        "role": "lit"
+      },
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 38,
+        "w": 133.3,
+        "h": 5,
+        "r": 0,
+        "role": "cutout"
+      }
+    ],
+    "approximate": true
+  },
+  "leds": {
+    "count": 8,
+    "positions_mm": [
+      [
+        16.0,
+        8.0
+      ],
+      [
+        30.5,
+        8.0
+      ],
+      [
+        44.9,
+        8.0
+      ],
+      [
+        59.4,
+        8.0
+      ],
+      [
+        73.9,
+        8.0
+      ],
+      [
+        88.4,
+        8.0
+      ],
+      [
+        102.8,
+        8.0
+      ],
+      [
+        117.3,
+        8.0
+      ]
+    ],
+    "direction": "Along the light bar at the top edge of the module, from the left end of the picture (DIMM key side not verified) to the right; the module is drawn lying down, in the case it stands upright.",
+    "approximate": true
+  },
+  "connection": {
+    "type": "smbus",
+    "notes": "RGB controller on the module, addressed over SMBus (address range 0x70-0x77)."
+  },
+  "sources": [
+    {
+      "url": "https://igorslab.de/en/next-gen-performance-and-oc-potential-g-skill-trident-z5-rgb-ddr5-6400-cl32-2x-16-gb-kit-test-with-teardown/2",
+      "note": "approx. 43 mm height incl. contacts, 8.4 mm thick, 133.3 mm long (Trident Z5 RGB, other speed grade)"
+    },
+    {
+      "url": "https://www.galaxus.be/en/s1/product/gskill-trident-z5-rgb-2-x-24gb-8000-mhz-ddr5-ram-dimm-ram-32823131",
+      "note": "retailer listing of the 2 x 24 GB 8000 kit"
+    }
+  ],
+  "verified_by": [
+    "measured",
+    "manufacturer"
+  ],
+  "notes": "Dimensions are those reported for the Trident Z5 RGB family (the 8000 kit uses the same heat spreader); G.Skill's own datasheet value was not found. 8 LEDs per module are measured on the owner's sticks. LED order along the bar and positions are approximate."
+}

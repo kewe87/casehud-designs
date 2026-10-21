@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "core-geforce-rtx-5080-zotac-solid-amp",
+  "vendor": "Alphacool",
+  "model": "Core GeForce RTX 5080 Zotac Solid and AMP GPU block with backplate",
+  "part_numbers": [],
+  "category": "gpu-block",
+  "dimensions_mm": {
+    "w": 235.6,
+    "h": 150.6,
+    "d": 34.1
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 235.6,
+        "h": 150.6,
+        "r": 6,
+        "role": "body"
+      },
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 28.6,
+        "w": 235.6,
+        "h": 122,
+        "r": 3,
+        "role": "frame"
+      }
+    ],
+    "side": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 150.6,
+        "h": 34.1,
+        "r": 2,
+        "role": "body"
+      }
+    ],
+    "approximate": true
+  },
+  "leds": {
+    "count": 11,
+    "positions_mm": [
+      [
+        18.0,
+        10.0
+      ],
+      [
+        38.0,
+        10.0
+      ],
+      [
+        57.9,
+        10.0
+      ],
+      [
+        77.9,
+        10.0
+      ],
+      [
+        97.8,
+        10.0
+      ],
+      [
+        117.8,
+        10.0
+      ],
+      [
+        137.8,
+        10.0
+      ],
+      [
+        157.7,
+        10.0
+      ],
+      [
+        177.7,
+        10.0
+      ],
+      [
+        197.6,
+        10.0
+      ],
+      [
+        217.6,
+        10.0
+      ]
+    ],
+    "direction": "Placeholder: left to right along the top edge; the real order along the block is not documented.",
+    "approximate": true,
+    "manufacturer_count": 11,
+    "measured_count": 11
+  },
+  "connection": {
+    "type": "argb-header",
+    "notes": "3-pin 5 V ARGB. In the owner's build daisy-chained via a splitter on the mainboard header argb3."
+  },
+  "sources": [
+    {
+      "url": "https://computerlounge.co.nz/products/alphacool-core-geforce-rtx-5080-zotac-solid-and-amp-gpu-block-with-backplate",
+      "note": "block 235.60 x 150.57 x 34.10 mm, backplate 235.6 x 122 x 6 mm, 11 ARGB LEDs, Zotac RTX 5080 Solid/AMP"
+    },
+    {
+      "url": "https://www.watercoolinguk.co.uk/product/alphacool-core-geforce-rtx-5080-5070-ti-solid-core-with-backplate/",
+      "note": "related block for Solid Core cards: 227.5 mm, 10 LEDs"
+    }
+  ],
+  "verified_by": [
+    "manufacturer",
+    "measured"
+  ],
+  "notes": "The Solid Core variant of this block is 227.5 x 128.3 mm with 10 LEDs; this entry is the Solid and AMP variant listed with 11 LEDs. Dimensions are from a retailer listing, not Alphacool itself. An earlier LED config assumed 9 LEDs; manufacturer listing and the later measurement both say 11. LED positions are a placeholder."
+}

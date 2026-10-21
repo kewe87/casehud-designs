@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "neon-wave",
+  "name": {
+    "de": "Neon-Welle",
+    "en": "Neon wave"
+  },
+  "description": {
+    "de": "Cyan-Welle auf dunklem Violett, passend zum Neon-Design-Set.",
+    "en": "A cyan wave on dark violet, matching the Neon design set."
+  },
+  "effect": "wave",
+  "params": {
+    "color": "#00f0ff",
+    "background": "#1a0830",
+    "useAccent": false,
+    "speed": 35,
+    "width": 35
+  },
+  "palette": [
+    "#00f0ff",
+    "#1a0830"
+  ],
+  "tags": [
+    "neon",
+    "calm"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

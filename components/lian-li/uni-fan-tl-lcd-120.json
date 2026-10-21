@@ -1,0 +1,235 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "uni-fan-tl-lcd-120",
+  "vendor": "Lian Li",
+  "model": "UNI FAN TL LCD 120",
+  "part_numbers": [],
+  "category": "fan-lcd",
+  "dimensions_mm": {
+    "w": 120,
+    "h": 124,
+    "d": 28
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 124,
+        "r": 7,
+        "role": "frame"
+      },
+      {
+        "type": "circle",
+        "cx": 60,
+        "cy": 62,
+        "r": 56,
+        "role": "cutout"
+      },
+      {
+        "type": "rect",
+        "x": 6,
+        "y": 1.5,
+        "w": 108,
+        "h": 3.5,
+        "r": 1.5,
+        "role": "lit"
+      },
+      {
+        "type": "rect",
+        "x": 6,
+        "y": 119,
+        "w": 108,
+        "h": 3.5,
+        "r": 1.5,
+        "role": "lit"
+      },
+      {
+        "type": "circle",
+        "cx": 60,
+        "cy": 62,
+        "r": 26,
+        "role": "body"
+      },
+      {
+        "type": "circle",
+        "cx": 60,
+        "cy": 62,
+        "r": 20.3,
+        "role": "display"
+      }
+    ],
+    "side": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 124,
+        "h": 28,
+        "r": 3,
+        "role": "body"
+      }
+    ],
+    "approximate": true
+  },
+  "leds": {
+    "count": 26,
+    "positions_mm": [
+      [
+        7.8,
+        117.2
+      ],
+      [
+        16.5,
+        117.2
+      ],
+      [
+        25.2,
+        117.2
+      ],
+      [
+        33.9,
+        117.2
+      ],
+      [
+        42.6,
+        117.2
+      ],
+      [
+        51.3,
+        117.2
+      ],
+      [
+        60.0,
+        117.2
+      ],
+      [
+        68.7,
+        117.2
+      ],
+      [
+        77.4,
+        117.2
+      ],
+      [
+        86.1,
+        117.2
+      ],
+      [
+        94.8,
+        117.2
+      ],
+      [
+        103.5,
+        117.2
+      ],
+      [
+        112.2,
+        117.2
+      ],
+      [
+        7.8,
+        6.8
+      ],
+      [
+        16.5,
+        6.8
+      ],
+      [
+        25.2,
+        6.8
+      ],
+      [
+        33.9,
+        6.8
+      ],
+      [
+        42.6,
+        6.8
+      ],
+      [
+        51.3,
+        6.8
+      ],
+      [
+        60.0,
+        6.8
+      ],
+      [
+        68.7,
+        6.8
+      ],
+      [
+        77.4,
+        6.8
+      ],
+      [
+        86.1,
+        6.8
+      ],
+      [
+        94.8,
+        6.8
+      ],
+      [
+        103.5,
+        6.8
+      ],
+      [
+        112.2,
+        6.8
+      ]
+    ],
+    "direction": "Measured wiring order: 13 LEDs along the bottom edge left to right, then 13 along the top edge left to right (front view, controller cable at the bottom).",
+    "zones": [
+      {
+        "id": "bottom",
+        "name": "Bottom light bar",
+        "first": 0,
+        "count": 13,
+        "direction": "left to right"
+      },
+      {
+        "id": "top",
+        "name": "Top light bar",
+        "first": 13,
+        "count": 13,
+        "direction": "left to right"
+      }
+    ],
+    "approximate": true,
+    "manufacturer_count": 26
+  },
+  "connection": {
+    "type": "usb-controller",
+    "notes": "Connects to the UNI FAN TL Controller (cable P-7P); the controller is required. LEDs are controlled over USB (0416:7372) or follow the motherboard ARGB sync input. The LCD fan only plugs into controller ports 2, 3 or 4."
+  },
+  "sources": [
+    {
+      "url": "https://lian-li.com/product/uni-fan-tl-lcd/",
+      "note": "dimensions 124 x 120 x 28 mm, 26 LEDs, two light zones (LCD Reverse Blade page)"
+    },
+    {
+      "url": "https://www.bhphotovideo.com/c/product/1810068-REG/lian_li_12tl1w_us_120mm_uni_fan_tl.html",
+      "note": "dual zone lighting, 26 LEDs, side diffuser on each side of the frame"
+    }
+  ],
+  "verified_by": [
+    "measured",
+    "manufacturer"
+  ],
+  "notes": "Short code in CaseHUD / LED tools: TLC12. LED count (26) and wiring order are measured on the owner's hardware and match the manufacturer count. LED positions in mm are derived from the measured order plus product photos and are approximate. Fan has a 1.6 inch round IPS LCD in the hub, 400 x 400 px. The wired TL LCD 120 is listed by retailers with the same 124 x 120 x 28 mm; one retailer lists the wireless variant as 120 x 124 x 28 (axes swapped), here w is the LED bar direction.",
+  "display": {
+    "width_px": 400,
+    "height_px": 400,
+    "area_mm": {
+      "x": 39.7,
+      "y": 41.7,
+      "w": 40.6,
+      "h": 40.6
+    }
+  }
+}

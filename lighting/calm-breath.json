@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "calm-breath",
+  "name": {
+    "de": "Ruhiger Atem",
+    "en": "Calm breathing"
+  },
+  "description": {
+    "de": "Langsames, dezentes Atmen in einem weichen Violett.",
+    "en": "Slow, subtle breathing in a soft violet."
+  },
+  "effect": "breathing",
+  "params": {
+    "color": "#a78bfa",
+    "useAccent": false,
+    "period": 8
+  },
+  "palette": [
+    "#a78bfa"
+  ],
+  "tags": [
+    "calm",
+    "clean",
+    "night"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

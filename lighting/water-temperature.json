@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "water-temperature",
+  "name": {
+    "de": "Wakü-Temperatur",
+    "en": "Coolant temperature"
+  },
+  "description": {
+    "de": "Farbe folgt der Kühlmitteltemperatur: kühles Blau bis warmes Rot.",
+    "en": "Color follows the coolant temperature, from cool blue to warm red."
+  },
+  "effect": "sensor",
+  "params": {
+    "sensor": "Temperatures/T Sensor|Temperatures/Coolant|Temperatures/Water|Temperatures/Liquid",
+    "min": 25,
+    "max": 42,
+    "low": "#3b82f6",
+    "high": "#ff3b1f",
+    "smoothing": 85
+  },
+  "palette": [
+    "#3b82f6",
+    "#ff3b1f"
+  ],
+  "tags": [
+    "water",
+    "sensor",
+    "clean"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

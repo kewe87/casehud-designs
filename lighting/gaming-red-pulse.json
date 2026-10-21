@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "gaming-red-pulse",
+  "name": {
+    "de": "Gaming Rot",
+    "en": "Gaming red"
+  },
+  "description": {
+    "de": "Rotes Atmen für Spielesitzungen, kräftig aber ruhig.",
+    "en": "Red breathing for gaming sessions, strong but steady."
+  },
+  "effect": "breathing",
+  "params": {
+    "color": "#ff003c",
+    "useAccent": false,
+    "period": 3
+  },
+  "palette": [
+    "#ff003c"
+  ],
+  "tags": [
+    "gaming"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

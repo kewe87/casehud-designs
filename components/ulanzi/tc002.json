@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "tc002",
+  "vendor": "Ulanzi",
+  "model": "TC002 Pixbar Smart Pixel Clock II",
+  "part_numbers": [
+    "TC002"
+  ],
+  "category": "display",
+  "dimensions_mm": {
+    "w": 205,
+    "h": 85,
+    "d": 33
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 205,
+        "h": 85,
+        "r": 8,
+        "role": "body"
+      },
+      {
+        "type": "rect",
+        "x": 10,
+        "y": 14,
+        "w": 185,
+        "h": 57,
+        "r": 2,
+        "role": "display"
+      }
+    ],
+    "approximate": true
+  },
+  "display": {
+    "width_px": 52,
+    "height_px": 16,
+    "area_mm": {
+      "x": 10,
+      "y": 14,
+      "w": 185,
+      "h": 57
+    }
+  },
+  "connection": {
+    "type": "proprietary",
+    "notes": "Wi-Fi 2.4 GHz, BLE 5.2, USB-C. Addressed over the network (AWTRIX firmware); 52 x 16 pixel matrix, no LED layout needed."
+  },
+  "sources": [
+    {
+      "url": "https://www.ulanzi.com/collections/new-arrivals/products/tc002-pixbar-smart-pixel-clock-ii",
+      "note": "16 x 52 LEDs (832), 20.5 x 3.3 x 8.5 cm"
+    }
+  ],
+  "verified_by": [
+    "manufacturer"
+  ],
+  "notes": "Size from the manufacturer: 20.5 x 3.3 x 8.5 cm. The matrix area on the front is estimated (approximate). Pixel pitch not published."
+}

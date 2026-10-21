@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "night-off",
+  "name": {
+    "de": "Aus bei Nacht",
+    "en": "Off at night"
+  },
+  "description": {
+    "de": "Alle LEDs aus (Schwarz), zum Beispiel per Zeitplan oder Szene.",
+    "en": "All LEDs off (black), for example from a schedule or scene."
+  },
+  "effect": "solid",
+  "params": {
+    "color": "#000000",
+    "useAccent": false
+  },
+  "palette": [
+    "#000000"
+  ],
+  "tags": [
+    "night",
+    "calm"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

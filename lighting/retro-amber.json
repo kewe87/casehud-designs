@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "retro-amber",
+  "name": {
+    "de": "Retro-Bernstein",
+    "en": "Retro amber"
+  },
+  "description": {
+    "de": "Warmes Bernstein wie ein Röhrenmonitor, ganz langsam atmend.",
+    "en": "Warm amber like a CRT, breathing very slowly."
+  },
+  "effect": "breathing",
+  "params": {
+    "color": "#ffb000",
+    "useAccent": false,
+    "period": 6
+  },
+  "palette": [
+    "#ffb000",
+    "#bd7d00"
+  ],
+  "tags": [
+    "retro",
+    "calm"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "cpu-temperature",
+  "name": {
+    "de": "CPU-Temperatur",
+    "en": "CPU temperature"
+  },
+  "description": {
+    "de": "Cyan bis Orange nach CPU-Temperatur.",
+    "en": "Cyan to orange by CPU temperature."
+  },
+  "effect": "sensor",
+  "params": {
+    "sensor": "Temperatures/CPU Package|Temperatures/Core (Tctl/Tdie)|Temperatures/Core (Tctl)",
+    "min": 35,
+    "max": 90,
+    "low": "#22d3ee",
+    "high": "#ff7a1a",
+    "smoothing": 80
+  },
+  "palette": [
+    "#22d3ee",
+    "#ff7a1a"
+  ],
+  "tags": [
+    "sensor",
+    "clean"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "presets": [
+    {"id": "calm-breath", "name": {"de": "Ruhiger Atem", "en": "Calm breathing"}, "effect": "breathing", "tags": ["calm", "clean", "night"], "file": "lighting/calm-breath.json"},
+    {"id": "cpu-temperature", "name": {"de": "CPU-Temperatur", "en": "CPU temperature"}, "effect": "sensor", "tags": ["sensor", "clean"], "file": "lighting/cpu-temperature.json"},
+    {"id": "cyberpunk-yellow-cyan", "name": {"de": "Cyberpunk Gelb/Cyan", "en": "Cyberpunk yellow/cyan"}, "effect": "stripes", "tags": ["cyberpunk", "party"], "file": "lighting/cyberpunk-yellow-cyan.json"},
+    {"id": "gaming-red-pulse", "name": {"de": "Gaming Rot", "en": "Gaming red"}, "effect": "breathing", "tags": ["gaming"], "file": "lighting/gaming-red-pulse.json"},
+    {"id": "gpu-load", "name": {"de": "GPU-Last", "en": "GPU load"}, "effect": "sensor", "tags": ["gaming", "sensor"], "file": "lighting/gpu-load.json"},
+    {"id": "meteor-around", "name": {"de": "Meteor rundum", "en": "Meteor all around"}, "effect": "meteor", "tags": ["neon", "party"], "file": "lighting/meteor-around.json"},
+    {"id": "neon-wave", "name": {"de": "Neon-Welle", "en": "Neon wave"}, "effect": "wave", "tags": ["neon", "calm"], "file": "lighting/neon-wave.json"},
+    {"id": "night-ember", "name": {"de": "Nachtglut", "en": "Night ember"}, "effect": "solid", "tags": ["night", "calm"], "file": "lighting/night-ember.json"},
+    {"id": "night-off", "name": {"de": "Aus bei Nacht", "en": "Off at night"}, "effect": "solid", "tags": ["night", "calm"], "file": "lighting/night-off.json"},
+    {"id": "rainbow-slow", "name": {"de": "Regenbogen langsam", "en": "Slow rainbow"}, "effect": "rainbow", "tags": ["calm", "party"], "file": "lighting/rainbow-slow.json"},
+    {"id": "retro-amber", "name": {"de": "Retro-Bernstein", "en": "Retro amber"}, "effect": "breathing", "tags": ["retro", "calm"], "file": "lighting/retro-amber.json"},
+    {"id": "spark-rain", "name": {"de": "Funkenregen", "en": "Spark rain"}, "effect": "sparkle", "tags": ["neon", "party"], "file": "lighting/spark-rain.json"},
+    {"id": "water-temperature", "name": {"de": "Wakü-Temperatur", "en": "Coolant temperature"}, "effect": "sensor", "tags": ["water", "sensor", "clean"], "file": "lighting/water-temperature.json"}
+  ]
+}

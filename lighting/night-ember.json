@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "night-ember",
+  "name": {
+    "de": "Nachtglut",
+    "en": "Night ember"
+  },
+  "description": {
+    "de": "Kaum sichtbares dunkles Rot als Orientierungslicht.",
+    "en": "A barely visible dark red as a night light."
+  },
+  "effect": "solid",
+  "params": {
+    "color": "#1a0300",
+    "useAccent": false
+  },
+  "palette": [
+    "#1a0300"
+  ],
+  "tags": [
+    "night",
+    "calm"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

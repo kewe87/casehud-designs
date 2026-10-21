@@ -1,0 +1,233 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "front-strip-argb-47",
+  "vendor": "unknown",
+  "model": "Front strip (case accessory, model unknown)",
+  "part_numbers": [],
+  "category": "case-accessory",
+  "dimensions_mm": {
+    "w": 470,
+    "h": 10,
+    "d": 3,
+    "approximate": true
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 470,
+        "h": 10,
+        "r": 3,
+        "role": "lit"
+      }
+    ],
+    "approximate": true
+  },
+  "leds": {
+    "count": 47,
+    "positions_mm": [
+      [
+        465.0,
+        5
+      ],
+      [
+        455.0,
+        5
+      ],
+      [
+        445.0,
+        5
+      ],
+      [
+        435.0,
+        5
+      ],
+      [
+        425.0,
+        5
+      ],
+      [
+        415.0,
+        5
+      ],
+      [
+        405.0,
+        5
+      ],
+      [
+        395.0,
+        5
+      ],
+      [
+        385.0,
+        5
+      ],
+      [
+        375.0,
+        5
+      ],
+      [
+        365.0,
+        5
+      ],
+      [
+        355.0,
+        5
+      ],
+      [
+        345.0,
+        5
+      ],
+      [
+        335.0,
+        5
+      ],
+      [
+        325.0,
+        5
+      ],
+      [
+        315.0,
+        5
+      ],
+      [
+        305.0,
+        5
+      ],
+      [
+        295.0,
+        5
+      ],
+      [
+        285.0,
+        5
+      ],
+      [
+        275.0,
+        5
+      ],
+      [
+        265.0,
+        5
+      ],
+      [
+        255.0,
+        5
+      ],
+      [
+        245.0,
+        5
+      ],
+      [
+        235.0,
+        5
+      ],
+      [
+        225.0,
+        5
+      ],
+      [
+        215.0,
+        5
+      ],
+      [
+        205.0,
+        5
+      ],
+      [
+        195.0,
+        5
+      ],
+      [
+        185.0,
+        5
+      ],
+      [
+        175.0,
+        5
+      ],
+      [
+        165.0,
+        5
+      ],
+      [
+        155.0,
+        5
+      ],
+      [
+        145.0,
+        5
+      ],
+      [
+        135.0,
+        5
+      ],
+      [
+        125.0,
+        5
+      ],
+      [
+        115.0,
+        5
+      ],
+      [
+        105.0,
+        5
+      ],
+      [
+        95.0,
+        5
+      ],
+      [
+        85.0,
+        5
+      ],
+      [
+        75.0,
+        5
+      ],
+      [
+        65.0,
+        5
+      ],
+      [
+        55.0,
+        5
+      ],
+      [
+        45.0,
+        5
+      ],
+      [
+        35.0,
+        5
+      ],
+      [
+        25.0,
+        5
+      ],
+      [
+        15.0,
+        5
+      ],
+      [
+        5.0,
+        5
+      ]
+    ],
+    "direction": "Measured: LED 1 at the front right, runs to the left, then towards the back of the case.",
+    "approximate": true
+  },
+  "connection": {
+    "type": "argb-header",
+    "notes": "Mainboard header argb2."
+  },
+  "sources": [],
+  "verified_by": [
+    "measured"
+  ],
+  "notes": "OPEN QUESTION for the owner: which strip is this (vendor, model, length, LEDs per metre)? Length 470 mm and an even pitch are guesses."
+}

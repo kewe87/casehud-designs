@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "meteor-around",
+  "name": {
+    "de": "Meteor rundum",
+    "en": "Meteor all around"
+  },
+  "description": {
+    "de": "Ein Komet mit Schweif läuft rund um die Lichtpfade, in den Neon-Farben.",
+    "en": "A comet with a tail runs around the light paths in neon colors."
+  },
+  "effect": "meteor",
+  "params": {
+    "color1": "#00f0ff",
+    "color2": "#ff2bd6",
+    "color3": "#4d7cff",
+    "colors": 3,
+    "speed": 45,
+    "tail": 30
+  },
+  "path": {
+    "mode": "around"
+  },
+  "palette": [
+    "#00f0ff",
+    "#ff2bd6",
+    "#4d7cff"
+  ],
+  "tags": [
+    "neon",
+    "party"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "gpu-load",
+  "name": {
+    "de": "GPU-Last",
+    "en": "GPU load"
+  },
+  "description": {
+    "de": "Grün bei Leerlauf, Rot unter voller Grafiklast.",
+    "en": "Green at idle, red under full graphics load."
+  },
+  "effect": "sensor",
+  "params": {
+    "sensor": "Load/GPU Core|Load/D3D 3D",
+    "min": 0,
+    "max": 100,
+    "low": "#76e04a",
+    "high": "#ff2a2a",
+    "smoothing": 60
+  },
+  "palette": [
+    "#76e04a",
+    "#ff2a2a"
+  ],
+  "tags": [
+    "gaming",
+    "sensor"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}

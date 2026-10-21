@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/lighting.schema.json",
+  "format": 1,
+  "id": "rainbow-slow",
+  "name": {
+    "de": "Regenbogen langsam",
+    "en": "Slow rainbow"
+  },
+  "description": {
+    "de": "Ein sehr langsam wandernder Regenbogen.",
+    "en": "A very slowly drifting rainbow."
+  },
+  "effect": "rainbow",
+  "params": {
+    "speed": 12,
+    "scale": 140,
+    "vertical": false
+  },
+  "palette": [
+    "#ff0000",
+    "#ffff00",
+    "#00ff00",
+    "#00ffff",
+    "#0000ff",
+    "#ff00ff"
+  ],
+  "tags": [
+    "calm",
+    "party"
+  ],
+  "author": "kewe87",
+  "license": "CC-BY-4.0"
+}
