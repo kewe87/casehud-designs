@@ -275,6 +275,48 @@
       "notes": "One 120 mm rear fan. Vertical position is a guess."
     }
   ],
+  "integrated_lighting": [
+    {
+      "component": "o11-dynamic-evo-argb-strip",
+      "zone": "front-leg",
+      "view": "front",
+      "position_mm": [
+        275,
+        452
+      ],
+      "path_mm": [
+        [
+          275,
+          452
+        ],
+        [
+          10,
+          452
+        ]
+      ],
+      "notes": "Front leg, LED 1 at the front right."
+    },
+    {
+      "component": "o11-dynamic-evo-argb-strip",
+      "zone": "side-leg",
+      "view": "side",
+      "position_mm": [
+        455,
+        452
+      ],
+      "path_mm": [
+        [
+          455,
+          452
+        ],
+        [
+          10,
+          452
+        ]
+      ],
+      "notes": "Side leg along the lower edge of the glass panel, front to back."
+    }
+  ],
   "areas": [
     {
       "id": "motherboard",

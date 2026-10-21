@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
   "format": 1,
-  "id": "core-distro-plate-o11-dynamic-evo-xl",
+  "id": "core-distro-plate-o11-dynamic-evo-apex-vpp",
   "vendor": "Alphacool",
-  "model": "Core Distro Plate O11 Dynamic EVO/XL with Apex VPP pump (ARGB)",
+  "model": "Core Distro Plate O11 Dynamic EVO with Apex VPP pump (ARGB)",
   "part_numbers": [
     "13743"
   ],
@@ -153,5 +153,5 @@
     "manufacturer",
     "measured"
   ],
-  "notes": "Manufacturer: 18 LEDs. The owner's measurement on a shared splitter channel gave 20, which is imprecise (sum of three devices on one channel), so the manufacturer count is used. Depth 41.3 mm is without pump and mount; 77.8 mm with pump (side outline). LED positions are NOT published and are a placeholder."
+  "notes": "Owner has the O11 Dynamic EVO version; according to retailers the same product also fits the O11 Dynamic EVO XL. Manufacturer: 18 LEDs. The owner's measurement on a shared splitter channel gave 20, which is imprecise (sum of three devices on one channel), so the manufacturer count is used. Depth 41.3 mm is without pump and mount; 77.8 mm with pump (side outline). LED positions are NOT published and are a placeholder."
 }

@@ -74,6 +74,10 @@ not good enough to machine a bracket".
   `side`, `other`), `view`, a `region` shape (envelope incl. radiator), `layouts` (per fan size:
   `fan_mm`, `count`, `snap_mm` = fan centres in the view in mounting order), optional `radiator_mm`,
   `max_thickness_mm`, `slots` (true if the holes are slots) and `notes`.
+* `integrated_lighting` (optional): lighting built into the case, e.g. an ARGB strip. Each entry is
+  `{component, zone?, view, position_mm, path_mm?, notes?}`: the library component (and optionally one
+  of its zones) is placed in the view, its first LED at `position_mm`, the LEDs spread evenly along the
+  polyline `path_mm` in addressing order. A strip that wraps a corner uses one entry per leg/zone.
 * `areas`: motherboard tray, PSU, PSU shroud, drive bays, chambers (shape + kind).
 * `approximate: true` means the geometry was estimated (only `dimensions_mm` and the numeric
   fan/radiator support are published).
@@ -121,7 +125,7 @@ diese Seite erklärt sie nur.
   Anschluss, USB-IDs, Quellen und `verified_by` (`measured` = am eigenen Gerät gemessen,
   `manufacturer` = Herstellerangabe, `community`). `approximate: true` heißt: aus Fotos/Maßen
   abgeleitet, nicht veröffentlicht.
-* **Gehäuse:** Außenmaße, Ansichten (`front`/`side`) als Formen, `mounts` mit Lüfter-/Radiator-
+* **Gehäuse:** Außenmaße, optional `integrated_lighting` (fest verbaute Leisten, als Bauteil + Pfad), Ansichten (`front`/`side`) als Formen, `mounts` mit Lüfter-/Radiator-
   Einbauplätzen (`snap_mm` = Lüftermitten) und `areas` (Mainboard, Netzteil, Laufwerke).
 * **Lichtanimationen:** ein Effekt mit seinen Parametern (`params` mit den Original-Schlüsseln der
   LED-Engine), optional `path`, `palette` (Vorschau), `tags`, Name/Beschreibung auf Deutsch und Englisch.

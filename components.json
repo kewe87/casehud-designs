@@ -2,16 +2,16 @@
   "version": 1,
   "components": [
     {"id": "apex-1-cpu-block-am5-argb", "vendor": "Alphacool", "model": "Apex 1 CPU Cooler AM5 (ARGB)", "category": "cpu-block", "verified_by": ["manufacturer", "measured"], "leds": 8, "file": "components/alphacool/apex-1-cpu-block-am5-argb.json"},
-    {"id": "core-distro-plate-o11-dynamic-evo-xl", "vendor": "Alphacool", "model": "Core Distro Plate O11 Dynamic EVO/XL with Apex VPP pump (ARGB)", "category": "distro-plate", "verified_by": ["manufacturer", "measured"], "leds": 18, "file": "components/alphacool/core-distro-plate-o11-dynamic-evo-xl.json"},
+    {"id": "core-distro-plate-o11-dynamic-evo-apex-vpp", "vendor": "Alphacool", "model": "Core Distro Plate O11 Dynamic EVO with Apex VPP pump (ARGB)", "category": "distro-plate", "verified_by": ["manufacturer", "measured"], "leds": 18, "file": "components/alphacool/core-distro-plate-o11-dynamic-evo-apex-vpp.json"},
     {"id": "core-geforce-rtx-5080-zotac-solid-amp", "vendor": "Alphacool", "model": "Core GeForce RTX 5080 Zotac Solid and AMP GPU block with backplate", "category": "gpu-block", "verified_by": ["manufacturer", "measured"], "leds": 11, "file": "components/alphacool/core-geforce-rtx-5080-zotac-solid-amp.json"},
     {"id": "rog-strix-x870e-e-gaming-wifi", "vendor": "ASUS", "model": "ROG STRIX X870E-E GAMING WIFI", "category": "mainboard", "verified_by": ["measured", "manufacturer"], "leds": 9, "file": "components/asus/rog-strix-x870e-e-gaming-wifi.json"},
     {"id": "trident-z5-rgb-ddr5-8000", "vendor": "G.Skill", "model": "Trident Z5 RGB DDR5-8000 CL40 (2 x 24 GB)", "category": "ram", "verified_by": ["measured", "manufacturer"], "leds": 8, "file": "components/gskill/trident-z5-rgb-ddr5-8000.json"},
+    {"id": "o11-dynamic-evo-argb-strip", "vendor": "Lian Li", "model": "O11 Dynamic EVO built-in ARGB strip", "category": "case-accessory", "verified_by": ["measured", "manufacturer"], "leds": 47, "file": "components/lian-li/o11-dynamic-evo-argb-strip.json"},
     {"id": "uni-fan-tl-controller", "vendor": "Lian Li", "model": "UNI FAN TL Controller (2nd generation)", "category": "controller", "verified_by": ["manufacturer"], "leds": 0, "file": "components/lian-li/uni-fan-tl-controller.json"},
     {"id": "uni-fan-tl-lcd-120", "vendor": "Lian Li", "model": "UNI FAN TL LCD 120", "category": "fan-lcd", "verified_by": ["measured", "manufacturer"], "leds": 26, "file": "components/lian-li/uni-fan-tl-lcd-120.json"},
     {"id": "uni-fan-tl-lcd-reverse-120", "vendor": "Lian Li", "model": "UNI FAN TL LCD 120 Reverse Blade", "category": "fan-lcd", "verified_by": ["measured", "manufacturer"], "leds": 26, "file": "components/lian-li/uni-fan-tl-lcd-reverse-120.json"},
     {"id": "uni-fan-tl-reverse-120", "vendor": "Lian Li", "model": "UNI FAN TL 120 Reverse Blade", "category": "fan", "verified_by": ["measured", "manufacturer"], "leds": 26, "file": "components/lian-li/uni-fan-tl-reverse-120.json"},
     {"id": "universal-screen-8-8", "vendor": "Lian Li", "model": "Universal Screen 8.8\"", "category": "display", "verified_by": ["measured", "manufacturer"], "leds": 60, "file": "components/lian-li/universal-screen-8-8.json"},
-    {"id": "tc002", "vendor": "Ulanzi", "model": "TC002 Pixbar Smart Pixel Clock II", "category": "display", "verified_by": ["manufacturer"], "leds": 0, "file": "components/ulanzi/tc002.json"},
-    {"id": "front-strip-argb-47", "vendor": "unknown", "model": "Front strip (case accessory, model unknown)", "category": "case-accessory", "verified_by": ["measured"], "leds": 47, "file": "components/unknown/front-strip-argb-47.json"}
+    {"id": "tc002", "vendor": "Ulanzi", "model": "TC002 Pixbar Smart Pixel Clock II", "category": "display", "verified_by": ["manufacturer"], "leds": 0, "file": "components/ulanzi/tc002.json"}
   ]
 }

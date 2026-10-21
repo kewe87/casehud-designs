@@ -1,0 +1,255 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kewe87/casehud-library/main/schema/component.schema.json",
+  "format": 1,
+  "id": "o11-dynamic-evo-argb-strip",
+  "vendor": "Lian Li",
+  "model": "O11 Dynamic EVO built-in ARGB strip",
+  "part_numbers": [],
+  "category": "case-accessory",
+  "dimensions_mm": {
+    "w": 750,
+    "h": 10,
+    "d": 3,
+    "approximate": true
+  },
+  "outline": {
+    "front": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 750,
+        "h": 10,
+        "r": 3,
+        "role": "lit"
+      }
+    ],
+    "approximate": true
+  },
+  "leds": {
+    "count": 47,
+    "positions_mm": [
+      [
+        745.0,
+        5
+      ],
+      [
+        728.9,
+        5
+      ],
+      [
+        712.8,
+        5
+      ],
+      [
+        696.7,
+        5
+      ],
+      [
+        680.7,
+        5
+      ],
+      [
+        664.6,
+        5
+      ],
+      [
+        648.5,
+        5
+      ],
+      [
+        632.4,
+        5
+      ],
+      [
+        616.3,
+        5
+      ],
+      [
+        600.2,
+        5
+      ],
+      [
+        584.1,
+        5
+      ],
+      [
+        568.0,
+        5
+      ],
+      [
+        552.0,
+        5
+      ],
+      [
+        535.9,
+        5
+      ],
+      [
+        519.8,
+        5
+      ],
+      [
+        503.7,
+        5
+      ],
+      [
+        487.6,
+        5
+      ],
+      [
+        471.5,
+        5
+      ],
+      [
+        455.4,
+        5
+      ],
+      [
+        439.3,
+        5
+      ],
+      [
+        423.3,
+        5
+      ],
+      [
+        407.2,
+        5
+      ],
+      [
+        391.1,
+        5
+      ],
+      [
+        375.0,
+        5
+      ],
+      [
+        358.9,
+        5
+      ],
+      [
+        342.8,
+        5
+      ],
+      [
+        326.7,
+        5
+      ],
+      [
+        310.7,
+        5
+      ],
+      [
+        294.6,
+        5
+      ],
+      [
+        278.5,
+        5
+      ],
+      [
+        262.4,
+        5
+      ],
+      [
+        246.3,
+        5
+      ],
+      [
+        230.2,
+        5
+      ],
+      [
+        214.1,
+        5
+      ],
+      [
+        198.0,
+        5
+      ],
+      [
+        182.0,
+        5
+      ],
+      [
+        165.9,
+        5
+      ],
+      [
+        149.8,
+        5
+      ],
+      [
+        133.7,
+        5
+      ],
+      [
+        117.6,
+        5
+      ],
+      [
+        101.5,
+        5
+      ],
+      [
+        85.4,
+        5
+      ],
+      [
+        69.3,
+        5
+      ],
+      [
+        53.3,
+        5
+      ],
+      [
+        37.2,
+        5
+      ],
+      [
+        21.1,
+        5
+      ],
+      [
+        5.0,
+        5
+      ]
+    ],
+    "direction": "Measured: LED 1 at the front right, runs to the left, then around the corner towards the back of the case. Drawn unrolled as one straight line, LED 1 at the right end.",
+    "zones": [
+      {
+        "id": "front-leg",
+        "name": "Front leg (narrow front face)",
+        "first": 0,
+        "count": 17,
+        "direction": "right to left in the front view"
+      },
+      {
+        "id": "side-leg",
+        "name": "Side leg (below the glass panel)",
+        "first": 17,
+        "count": 30,
+        "direction": "front to back in the glass side view"
+      }
+    ],
+    "approximate": true
+  },
+  "connection": {
+    "type": "argb-header",
+    "notes": "5 V ARGB, in the owner's build on mainboard header argb2; the case also has LED buttons on the side panel."
+  },
+  "sources": [
+    {
+      "url": "https://www.vortez.net/news_story/lian_lis_popular_o11_dynamic_experiences_a_new_evolution.html",
+      "note": "press release: built-in ARGB strip along the edge of the front glass panel, motherboard sync"
+    }
+  ],
+  "verified_by": [
+    "measured",
+    "manufacturer"
+  ],
+  "notes": "The strip is the case's built-in lighting. Sources only say it runs along the edge of the glass panel; the L-shaped course (front leg then side leg) follows the owner's measurement (LED 1 front right, runs left, then back). The split 17 + 30 LEDs follows from 750 mm total length at an even pitch of about 16 mm and is a guess. The RGB variant of the case has separate top and bottom strips and is not covered."
+}

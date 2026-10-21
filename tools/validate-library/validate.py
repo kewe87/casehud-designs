@@ -97,6 +97,29 @@ def check_case(path, d):
                     fail(f"{path.name}: mount {m['id']} snap point {p} outside the view")
 
 
+def check_integrated(root):
+    comps = {}
+    for f in (root / "components").rglob("*.json"):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+            comps[d["id"]] = d
+        except Exception:  # noqa: BLE001
+            pass
+    for f in (root / "cases").rglob("*.json"):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            continue
+        for e in d.get("integrated_lighting", []):
+            c = comps.get(e["component"])
+            if not c:
+                fail(f"{f.name}: integrated_lighting component {e['component']} not in the library")
+            elif "zone" in e and e["zone"] not in [z["id"] for z in c.get("leds", {}).get("zones", [])]:
+                fail(f"{f.name}: component {e['component']} has no zone {e['zone']}")
+            if e["view"] not in d["views"]:
+                fail(f"{f.name}: integrated_lighting uses missing view {e['view']}")
+
+
 def check_set(folder, schema, check, index_name, list_key):
     files = sorted((root / folder).rglob("*.json")) if (root / folder).is_dir() else []
     seen = {}
@@ -137,6 +160,7 @@ def check_set(folder, schema, check, index_name, list_key):
 
 check_set("components", "component.schema.json", check_component, "components.json", "components")
 check_set("cases", "case.schema.json", check_case, "cases.json", "cases")
+check_integrated(root)
 check_set("lighting", "lighting.schema.json", None, "lighting.json", "presets")
 
 # keep the designs index in the format CaseHUD parses
