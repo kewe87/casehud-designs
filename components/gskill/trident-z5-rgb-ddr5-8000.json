@@ -81,8 +81,9 @@
         8.0
       ]
     ],
-    "direction": "Along the light bar at the top edge of the module, from the left end of the picture (DIMM key side not verified) to the right; the module is drawn lying down, in the case it stands upright.",
-    "approximate": true
+    "direction": "Along the light bar. Measured on the owner's system: with the module standing upright in the case, LED 1 is at the top end and the chain runs downward; in this drawing (module lying down) the left end is the top end. Several modules on one channel run in parallel.",
+    "approximate": true,
+    "measured_count": 8
   },
   "connection": {
     "type": "smbus",
